@@ -1,0 +1,265 @@
+*{
+    padding:0;
+    margin: 0;
+}
+body{
+    background-color: rgba(26,44,56,1);
+}
+
+.box-container{
+    height: 75vh;
+    margin-top: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 1fr); 
+    width: 60vh;
+    height: 70vh;
+    gap: 1.75vh; 
+    background-color: rgba(14,33,46,1);
+    padding: 2vh 28vh 10vh 28vh;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+        
+}
+
+.box {
+background-color:#2f4554;
+padding: 20px;
+border-radius: 6px;
+text-align: center;
+height: 70px;
+width: 70px;
+box-shadow: 10px 10px;
+}
+
+.box:hover{
+    cursor: pointer;
+}
+.box:active{
+    background-color: #071824;
+}
+
+.image{
+    filter: invert(1);
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+.val{
+    color: white;
+}
+.logo{
+    height: 200px;
+    width: 200px;
+
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+
+.betting{
+     margin-bottom: 40vh;
+     padding-right: 22px;
+}
+
+.bet{
+    color : rgba(177,186,211,1);
+    font-family: sans-serif;
+    margin-top: 12px;
+}
+
+.mines{
+    width: 35vh;
+    display: block;
+    height: 6vh;
+    margin-top: 1vh;
+    background-color: rgba(14,33,46,1);
+    padding: 8px;
+    color: white;
+    font-weight: 700;
+    border: 3px solid rgba(47,69,84,1);
+    border-radius: 5px;
+}
+.mines:focus{
+    outline: none;
+}
+.leftBar{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    outline: none;
+    padding:10px;
+    width:276px;
+    background-color: #213743;
+    height: 79vh; 
+    border: none; 
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+.placeBet{
+    gap:4vh;
+    width: 35vh;
+    background-color: #0fe700;
+    border-radius: 5px;
+    border: none;
+    padding:20px;
+    height: 7vh;
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+}
+.placeBet:active {
+    background-color: #3e8e41;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translateY(2px);
+  }
+  
+
+.inputBox{
+    color: white;
+    font-weight: 700;
+    margin-top: 1vh;
+    width: 100%;
+    height: 3vh;
+    background-color: rgba(14,33,46,1);
+    border: none;
+    padding:8px;
+    border: 3px solid rgba(47,69,84,1);
+    border-radius: 5px;
+}
+
+.inputBox:focus{
+    outline: none;
+}
+
+.stake{
+    filter: invert(1);
+    height: 10vh;
+    width: 10vh;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+
+  }
+  .money{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.currency{
+    width: 120px;
+    height: 52px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #0F212E;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.wallet{
+    width: 80px;
+    height: 50px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #1475E1;
+    color: #FFF;
+    font-weight: 600;
+}
+.currency:focus{
+    outline: none;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.search{
+    margin: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+.s{
+    display: inline;
+}
+.images{
+    height: 15px;
+    width: 15px;
+    filter: invert(1);
+    padding: 4px;
+}
+.images:hover{
+    cursor: pointer;
+}
+.topheading{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.manualDiv{
+    height: 7vh;
+    background-color: #0fe700;
+    width: 40vh;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    background-color: #0e212e;
+    border: none;
+}
+
+.manual,.auto{
+    padding:15px;
+    width: 132px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: #0e212e;
+}
+.manual{
+    background-color: #7f93a1;
+}
+
+.score-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0e212e;
+    border: 2px solid #0fe700;
+    color: white;
+    font-size: 1.5rem;
+    padding: 70px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000; /* Higher than other elements */
+    display: none; /* Hidden by default */
+}
